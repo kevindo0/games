@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h4>Home</h4>
-    <p>height:{{ height }}px</p>
+    <h4>游戏列表</h4>
+    <router-link :to="{ name: 'card'}">卡牌翻转</router-link>
   </div>
 </template>
 <script>

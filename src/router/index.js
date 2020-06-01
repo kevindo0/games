@@ -5,7 +5,15 @@ import Home from '@/views/Home'
 Vue.use(Router)
 
 const routes = [
-  { path: '/', name: 'home', component: Home },
+  { 
+    path: '/',
+    name: 'home',
+    component: Home
+  }, {
+    path: '/card',
+    name: 'card',
+    component: () => import('@/views/CardTransfer')
+  }
 ]
 
 const router = new Router({
